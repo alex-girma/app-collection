@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="style.css" />
+		<title>Bin2Dec</title>
+	</head>
+	<body>
+		<div class="container">
+			<form action="" class="form">
+				<div class="title">
+					<p>CONVERTER</p>
+				</div>
+				<div class="form__container">
+					<div class="flex-between form__decimal">
+						<label for="decimal"><p>Decimal</p></label>
+						<input
+							type="text"
+							class="input input-decimal"
+							name="decimal"
+							id="decimal"
+							maxlength="4"
+							placeholder="Enter decimal number"
+						/>
+					</div>
+					<div class="form__converter--decimal">&dArr;</div>
+					<div class="form__converter--binary display-none">&uArr;</div>
+					<div class="flex-between form__binary">
+						<label for="binary"><p>Binary</p></label>
+						<input
+							type="text"
+							class="input input-binary"
+							name="binary"
+							id="binary"
+							maxlength="8"
+							placeholder="Enter binary number"
+						/>
+					</div>
+					<div class="btn-container">
+						<button type="submit" class="btn btn__submit">Convert</button>
+						<button type="submit" class="btn btn__clear">Clear</button>
+					</div>
+				</div>
+			</form>
+		</div>
+		<script src="index.js"></script>
+	</body>
+</html>

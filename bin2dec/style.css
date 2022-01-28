@@ -1,0 +1,172 @@
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	box-sizing: border-box;
+	font-size: 1.6rem;
+	font-family: "Open sans", sans-serif;
+	color: rgb(236, 232, 232);
+}
+
+.flex-between {
+	display: flex;
+	justify-content: space-between;
+}
+
+.container {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #229954;
+	z-index: 1;
+}
+
+.form {
+	background-color: #52be80;
+	width: 32rem;
+	height: 40rem;
+	border-radius: 0.7rem;
+	overflow: hidden;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+		rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.form__container {
+	padding: 1rem;
+}
+
+.title {
+	background-color: #27ae60;
+	text-align: center;
+	font-size: 2.5rem;
+	padding: 3rem 0;
+	margin-bottom: 2rem;
+}
+
+label {
+	border-radius: 0.5rem 0 0 0.5rem;
+	background-color: #a9dfbf;
+	font-size: 1.8rem;
+	width: 30%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: rgb(255, 255, 255);
+}
+
+.input {
+	width: 70%;
+	line-height: 1.5;
+	font-size: 1.6rem;
+	border-radius: 0 0.5rem 0.5rem 0;
+	border: none;
+	padding: 0.2rem 1rem;
+	color: rgb(144, 142, 142);
+}
+
+.input:active {
+	color: rgb(144, 142, 142);
+}
+
+.input::placeholder {
+	color: rgb(219, 216, 216);
+	font-size: 1.4rem;
+}
+
+.input:focus {
+	outline: none;
+}
+
+.form__decimal {
+	position: relative;
+}
+
+.form__decimal::after {
+	position: absolute;
+	content: "";
+	left: 1%;
+	top: 105%;
+	height: 5%;
+	width: 98%;
+	border-radius: 0.5rem;
+	transform: scaleX(0);
+	transform-origin: left;
+	transition: transform 1s;
+}
+
+.form__decimal:hover::after {
+	background-color: #229954;
+
+	transform: scaleX(1);
+}
+
+.form__binary {
+	position: relative;
+}
+
+.form__binary::after {
+	position: absolute;
+	content: "";
+	left: 1%;
+	top: 105%;
+	height: 5%;
+	width: 98%;
+	border-radius: 0.5rem;
+	transform: scaleX(0);
+	transform-origin: left;
+	transition: transform 1s;
+}
+
+.form__binary:hover::after {
+	background-color: #229954;
+	transform: scaleX(1);
+}
+
+.display-none {
+	display: none;
+}
+
+.form__converter--decimal,
+.form__converter--binary {
+	text-align: center;
+	width: 30%;
+	height: 3rem;
+	font-size: 2.2rem;
+	color: #affbcf;
+}
+
+.btn-container {
+	margin: 12rem 2rem 0 2rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.btn {
+	border: none;
+	padding: 0.5rem 1.5rem;
+	font-size: 2rem;
+	border-radius: 0.5rem;
+	background-color: #27ae60;
+	color: inherit;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+		rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+	transition: all 0.25s;
+}
+
+.btn:hover {
+	background-color: #29b764;
+}
+
+.btn:active {
+	transform: translateY(0.3rem);
+}
